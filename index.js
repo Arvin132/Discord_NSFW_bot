@@ -18,7 +18,7 @@ client.on('messageCreate', function(message) {
         var channel = client.channels.cache.get(message.channelId)
         channel.send("Hello My Name is Harambe, and i am a bot created to detect NSFW content")
         channel.send("I am in the process of development")
-        channel.send()
+        channel.send("https://github.com/Arvin132/Discord_NSFW_bot")
     }
 })
 
