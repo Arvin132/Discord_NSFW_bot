@@ -71,6 +71,13 @@ client.on('messageCreate', async function(message) {
         channel.send(data)
     }
 
+    if (command == "help") {
+        config.HELP.forEach(com => {
+            channel.send("message start with" + config.PREFIX)
+            channel.send(com)
+        })
+    }
+
     // later 
     // if (command == "report") {
     //     const repliedTo = await message.channel.messages.fetch("1036763685642842112");
